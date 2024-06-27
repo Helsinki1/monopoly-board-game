@@ -145,9 +145,9 @@ def goBack3Places(playerName):
   x = players.index(playerName)
   if money[x] > 0:
     print(f"{playerName} has to go back 3 tiles. (Chance Card)")
-    spotvalue = spots[i]
+    spotvalue = spots[players.index(playerName)]
     spotvalue -= 3
-    spot[i] = spotvalue
+    spots[players.index(playerName)] = spotvalue
     showDataFrame()
 
 def electedChairman(playerName):
